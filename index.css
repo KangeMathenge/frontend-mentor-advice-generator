@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;800&family=Manrope:wght@400;800&family=Outfit:wght@100;200;300;400&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap');
+:root{
+    --light-cyan: 193, 38%, 86%;
+    --neon-green: 150, 100%, 66%;
+    --grayish-blue: 217, 19%, 38%;
+    --dark-grayish-blue: 217, 19%, 24%;
+    --dark-blue:218, 23%, 16%
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background-color: hsl(var(--dark-blue));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container{
+    width:90%;
+    max-width: 650px;
+    min-width: 470px;
+    padding: 2rem;
+    background-color: hsl(var(--dark-grayish-blue));
+    color: white;
+    border-radius: 1rem;
+    position: relative;
+   
+}
+.container h4{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: hsl(var(--neon-green));
+    text-align: center;
+    
+}
+.container p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.container .divider{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.container .divider1{
+    width: 100%;
+    display: none;
+    margin-bottom: 2rem;
+}
+@media screen and (max-width: 668px){
+    .container .divider{
+        display: none;
+    }
+    .container .divider1{
+        display: block;
+    }
+}    
+.container #random-advice{
+    border-radius: 50%;
+    background-color: hsl(var(--neon-green));
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -35px;
+    right: 50%;
+    transform: translateX(50%);
+    cursor: pointer;
+}
+.container #random-advice img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+
+}
+@media screen and (max-width: 668px){
+    .container #random-advice{
+        width: 50px;
+        height: 50px;
+    }
+    .container #random-advice img{
+        width: 20px;
+        height: 20px;
+    }
+}
